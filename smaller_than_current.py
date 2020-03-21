@@ -3,7 +3,7 @@
 # Input: nums = [8,1,2,2,3]
 # Output: [4,0,1,1,3]
 
-def smaller_than_current(nums):
+def smaller_than_current(nums: [int]) -> [int]:
 	output = [0] * len(nums)
 	for i in range(len(nums)):
 		for j in range(len(nums)):
