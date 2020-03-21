@@ -1,12 +1,3 @@
-from helper import check
-
-test = [
-	"()",
-	")(()))",
-	"(",
-	"(())((()())())"
-]
-
 def valid_paren(str):
 	stack = []
 	open_brack = "("
@@ -18,8 +9,5 @@ def valid_paren(str):
 			stack.append(char)
 		if char == closing_brack and stack.pop() != open_brack:
 			return False
-
 	if stack == []:
 		return True
-
-check(valid_paren, test)

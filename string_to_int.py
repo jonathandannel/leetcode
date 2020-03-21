@@ -6,9 +6,7 @@ def atoi(s):
 			negative = True
 		if x.isdigit():
 			output += x
-
 	num = int(output)
-
 	if negative:
 		return 0 - num
 	else: 
